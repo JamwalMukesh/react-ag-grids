@@ -32,10 +32,10 @@ function GridDemo() {
     // Column Definitions: Defines the columns to be displayed.
     // We have an Array of JSON which represent field name
     const [colDefs, setColDefs] = useState([
-        { field: "make" },
-        { field: "model" },
-        { field: "price", valueFormatter: (p) => 'Rs. ' + p.value.toLocaleString() },
-        { field: "electric", cellRenderer: CustomButtonComponent }
+        { field: "make",flex:2 },
+        { field: "model",flex:1 },
+        { field: "price",flex:1, valueFormatter: (p) => 'Rs. ' + p.value.toLocaleString() },
+        { field: "electric",flex:1, cellRenderer: CustomButtonComponent }
     ]);
 
     // Two points always keep in mind
